@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    padding: 20px 0;
+}
+
+nav{
+    width: 450px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav li{
+    text-decoration: none;
+}
