@@ -4,8 +4,18 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color:#f2f1f1;
 }
-#margtop{
-    margin: 20px;
+*{
+    box-sizing: border-box;
+}
+.margtop{
+    margin: 1000px;
+}
+
+#h-one{
+    font-size: 3rem;
+    margin-bottom: .8rem;
+    margin-top: 4rem;
+    color: rgb(61, 61, 61);
 }
 
 .univbut{
@@ -408,14 +418,9 @@ header i.usr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
-#third-sec h1{
-    font-size: 3rem;
-    margin-bottom: .8rem;
-    margin-top: 4rem;
-    color: rgb(61, 61, 61);
-}
 #box-conter{
     display: flex;
     flex-wrap: wrap;
@@ -423,11 +428,12 @@ header i.usr {
     display: flex;
     justify-content: center;
     width: 100%;
+    overflow: hidden;
 }
 
 #main-box{
     width: 220px;
-    height: 400px;
+    height: 390px;
     border-radius: 10px;
     margin-left: 20px;
     display: flex;
@@ -436,17 +442,59 @@ header i.usr {
     align-items: center;
     justify-content: center;
     margin: 15px;
-    
+    position: relative;
+    overflow: hidden;
 }
+
+/*
+#inner-main-top{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+
+}
+*/
+
+#sale{
+    color: white;
+    background-color: rgb(243, 85, 28);
+    height: 23px;
+    width: 50px;
+    border-radius: 3px;
+    position: absolute;
+    text-align: center;
+    margin: 6px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    top: 4%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heart{
+    position: relative;
+    color: #999;
+    font-size: 1.2rem;
+    top: 0;
+    left: 40%;
+    margin: 5px;
+}
+
+#heart:hover{
+    color: #07a314;
+}
+
 
 #main-box img{
     width: 180px;
     height: 150px;
 }
 #line{
-    margin: 5px;
+    margin: 15px;
     height: 1px;
-    width: 220px;
+    width: 190px;
     background-color:gainsboro;
 }
 #sub-box{
@@ -473,7 +521,7 @@ header i.usr {
 }
 #details h3{
     margin: 0;
-    margin-top: 6px;
+    margin-top: 4px;
     color: #666;
 }
 
@@ -503,11 +551,210 @@ header i.usr {
     cursor: pointer;
 }
 
+
 #main-box:hover{
     border: solid 1.8px #07a314;
-    transition: 0.2s;
+    box-shadow: 2px 2px 2px 2px gainsboro;
 }
+
 .btn-verg:hover{
+    color: white;
+    background: #07a314;
+    
+}
+
+
+
+/*fourth section*/
+#fourth-sec{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+#fourth-sec img{
+    border-radius: 10px;
+    width: 1050px;
+    height: 315px;
+    transition: transform 2s;
+}
+
+
+#fourth-sec:hover img{
+    transform:scale(1.1) ;
+}
+
+
+
+
+/*fifth section*/
+#fifth-sect{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contain1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 40px;
+
+}
+
+#fifth-sect p{
+    color: red;
+    font-size: 2rem;
+}
+
+#hori-box{
+    display: flex;
+    height: 270px;
+    width: 530px;
+    border-radius: 8px;
+    background: white;
+    justify-content: flex-start;
+    
+}
+
+
+#pic-box{
+    border-right: solid 1px #999;
+    margin: 10px;
+    position: relative;
+}
+#pic-box p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #b12fad;
+    color: white;
+    font-size: 1.1rem;
+    height: 25px;
+    width: 70px;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+#pic-box i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #999;
+}
+
+#pic-box img{
+    height: 210px;
+    width: 220px;
+    
+}
+
+
+#detail1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+#detail1 h3{
+    margin: 0;
+    margin-top: 4px;
+    color: #666;
+}
+#detail1 p{
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+#detail1 p{
+    margin: 0;
+}
+
+#h-three{
+    font-size: 1.4rem;
+    margin: 0;
+    margin-top: 10px;
+}
+
+
+#rate{
+    display: flex;
+    margin: 0;  
+}
+
+#rate i{
+    color: gold;
+}
+
+#ash i{
+    color: #999;
+}
+
+
+
+#sub-box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px;
+    gap: 7px;
+}
+
+#sub-box1 p{
+    color: #07a314;
+    
+}
+
+#sub-box1 p span{
+    color: red;
+    text-decoration: line-through;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+#sub-box1 p em{
+    font-style: normal;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#pro-de{
+    margin: 0;
+    line-height: 25px;
+}
+#pro-de p{
+    font-size: 1rem;
+    color: #222;
+    
+
+}
+
+#detail1 .btn-verga{
+    height: 35px;
+    width: 250px;
+    background-color: rgb(231, 230, 230);
+    color: rgb(90, 90, 90);
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+#hori-box{
+    border: solid 1.8px #07a314;
+    box-shadow: 2px 2px 2px 2px gainsboro;
+}
+
+#detail1 .btn-verga:hover{
     color: white;
     background: #07a314;
     
