@@ -51,6 +51,7 @@ body{
     font-size:.9rem ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
+
 .lang-mon{
     display: flex;
     gap: 1rem ;
@@ -80,13 +81,16 @@ select{
 header{
     display: flex;
     width: 100%;
-    height: 80px;
+    height:60px;
     align-items: center;
     justify-content: center;
     gap: 2.2rem;
     position:absolute;
     background-color: white;
-    position: absolute;
+    position: sticky;
+    top: 0;
+    border-bottom:15px  rgba(0,0,0,0.1);
+    z-index: 100;
 
 }
 header a {
@@ -240,11 +244,24 @@ header i.usr {
 }
 
 /*first section*/
-.trans-header{
+#first-sec{
+    position: relative;
+}
+
+.subheader{
     display: flex;
-    height: 60px;
+    height: 70px;
     width: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    
+}
+
+.undersub{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     justify-content: space-between;
 }
 
@@ -554,7 +571,7 @@ header i.usr {
 
 #main-box:hover{
     border: solid 1.8px #07a314;
-    box-shadow: 2px 2px 2px 2px gainsboro;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.1);
 }
 
 .btn-verg:hover{
@@ -571,6 +588,7 @@ header i.usr {
     width: 100%;
     justify-content: center;
     margin: 100px 0;
+    
 }
 
 #fourth-sec img{
@@ -595,12 +613,16 @@ header i.usr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 #contain1{
     display: flex;
+    width: 90%;
     flex-wrap: wrap;
     justify-content:center;
-    gap: 40px;
+    gap: 20px;
+    overflow: hidden;
+    margin-bottom: 60px;
 
 }
 
@@ -616,6 +638,7 @@ header i.usr {
     border-radius: 8px;
     background: white;
     justify-content: flex-start;
+    overflow: hidden;
     
 }
 
@@ -639,6 +662,7 @@ header i.usr {
     font-weight: 600;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 #pic-box i{
@@ -646,11 +670,15 @@ header i.usr {
     top: 0;
     right: 0;
     color: #999;
+    font-size: 1.3rem;
+    margin: 0 10px;
+    overflow: hidden;
 }
 
 #pic-box img{
     height: 210px;
     width: 220px;
+    overflow: hidden;
     
 }
 
@@ -660,6 +688,7 @@ header i.usr {
     flex-direction: column;
     justify-content: flex-start;
     gap: 10px;
+    overflow: hidden;
 }
 #detail1 h3{
     margin: 0;
@@ -697,12 +726,15 @@ header i.usr {
 
 
 
+
+
 #sub-box1{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 10px;
     gap: 7px;
+    overflow: hidden;
 }
 
 #sub-box1 p{
@@ -740,18 +772,24 @@ header i.usr {
     background-color: rgb(231, 230, 230);
     color: rgb(90, 90, 90);
     border-radius: 5px;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 600;
     cursor: pointer;
     align-items: center;
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    gap: .3rem;
+}
+#detail1basket{
+    font: size .6rem ;
 }
 
 
-#hori-box{
+#hori-box:hover{
     border: solid 1.8px #07a314;
-    box-shadow: 2px 2px 2px 2px gainsboro;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.1);
+    
 }
 
 #detail1 .btn-verga:hover{
@@ -759,4 +797,114 @@ header i.usr {
     background: #07a314;
     
 }
+
+
+
+/* Sixth section*/
+#sixth-sec{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: -webkit-gradient(linear, right top, left top, from(#c3ffda), to(#a1f3c0));
+    background: linear-gradient(to left, #c3ffda, #a1f3c0);
+    margin-top: 100px;
+}
+
+
+
+#countleft{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px    80px;
+    align-items: center;
+
+}
+
+#countleft h1{
+    font-size: 3.4rem;
+    text-align: center;
+    margin: 0;
+    color: #222;
+}
+
+#countleft p{
+    text-align: center;
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.counter{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.counting{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.counting h2{
+    color: #07a314;
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 1000;
+    
+
+}
+.counting h5{
+    color: #222;
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+#countright{
+    width: 42%;
+    margin: 100px 80px;
+    position: relative;
+    
+}
+
+#countright img{
+    width: 100%;
+}
+#countright h1{
+    position: absolute;
+    bottom: 70%;
+    left: 0;
+    padding: 30px 40px;
+    border-radius: 50%;
+    color: white;
+    background: rgb(251, 65, 65);
+   text-align: center;
+   font-weight: 1000;
+   font-size: 1rem;
+}
+
+
+.countbut{
+    display: flex;
+    width: 180px;
+    height: 55px;
+    border-radius: 8px;
+    color: white;
+    background: #07a314;
+    border: solid 2.5px #07a314;
+    cursor: pointer;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.countbut:hover{
+    color: #07a314;
+    background: white;
+}
+
 
