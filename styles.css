@@ -244,6 +244,7 @@ header i.usr {
 }
 
 /*first section*/
+
 #first-sec{
     position: relative;
 }
@@ -270,6 +271,99 @@ header i.usr {
     width: 100%;
 
 }
+
+/* dropdown */
+#dropdowns{
+    display: flex;
+    width: 50%;
+}
+#dropdowns ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 160px;
+    background: white;
+    border-radius: 8px;
+    margin-top: 230px;
+    justify-content: space-around;
+
+}
+
+.dropinna{
+    display: flex;
+}
+.submenu a{
+    color: grey;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.dropdown:hover>.submenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu a:hover{
+    color: #07a314;
+}
+  
+.submenu>.submenu-toggle:active {
+/*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+.dropinna{
+    display: none;
+    position: absolute;
+    left: 130px;
+    top: 72px;
+    background: white;
+    border-radius: 8px;
+    width: 80%;
+    height: 250px;
+    justify-content: space-around;
+}
+
+.mainlist{
+    display: flex;
+    flex-direction: column;
+}
+.mainlist h3{
+    margin: 0;
+    color: #222;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.mainlist a{
+    text-decoration: none;
+    color: grey;
+    font-size: 1.2rem;
+}
+
+
+.dropdowna:hover>.dropinna{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
 
 .sec-back{
     background-image: url(/images/cow.png);
